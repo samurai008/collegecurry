@@ -1,0 +1,97 @@
+{% extends "thewebapp/base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+College Detail
+{% endblock title %}
+
+{% block content %}
+
+{% include "thewebapp/partials/searchfields.html" %}
+
+<div class="container">
+  <div class="row">
+    <div class="six columns">
+      <h5>Indian Institute of Technology</h5>
+    </div>
+    <div class="six columns">
+      <a href="#" class="button button-primary u-pull-right">Add to compare</a>
+    </div>
+  </div>
+  <div class="row">
+    <!-- Reviews Column -->
+    <div class="six columns col-border">
+      <h5>Reviews (<a href="#">42</a>)
+        <select class="u-pull-right font14"><option>
+        Sort by
+        </option></select>
+      </h5>
+      <table>
+        <tr>
+          <td>
+            <h6 class="review-title">Title <br /><span>by Nilabjo rated <span class="score-board">A+</span></span></h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h6 class="review-title">Title <br /><span>by Nilabjo rated <span class="score-board">A+</span></span></h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a href="#">Read More</a>
+          </td>
+        </tr>
+      </table>
+      <ul class="inline-list">
+        <a href="#" class="button button-primary">Prev</a>
+        <a href="#" class="button button-primary u-pull-right">Next</a>
+    </div>
+
+    <!-- Field Columns -->
+    <div class="six columns col-border">
+      <table class="except-border-last">
+        <tr>
+          <td>
+            <a href="#" data-featherlight="#mylightbox" id="mylightbox-btn">Academics</a>
+            <div id="mylightbox">abcd</div>
+
+            <!-- <a href="{% url "collegedetail" %}col-det-particular .selector" data-featherlight="ajax">Open ajax content in lightbox</a>
+            <a href="{% url "collegedetail" %}col-det-particular" data-featherlight="iframe">Academics</a> -->
+          </td>
+          <td>
+            A+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="#">Sports</a>
+          </td>
+          <td>
+            A+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="#">Demographic</a>
+          </td>
+          <td>
+            A+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="#">Placements</a>
+          </td>
+          <td>
+            A+
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

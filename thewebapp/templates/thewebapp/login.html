@@ -1,0 +1,43 @@
+{% extends "./base.html" %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h5 class="light-title">Login with CollegeCurry</h5>
+  <form>
+    <div class="row flex-mb-col">
+      <div class="six columns">
+        <div class="row">
+            <label for="email">Email</label>
+            <input class="u-full-width" type="email" placeholder="test@email.com" id="email">
+
+        </div>
+        <div class="row">
+
+            <label for="email">Password</label>
+            <input class="u-full-width" type="email" placeholder="password" id="password">
+
+        </div>
+        <div class="row">
+          <button class="hvr-overline-from-left" type="submit" id="login">Login</button>
+        </div>
+      </div>
+      <div class="six columns">
+        <div class="show-mob">
+          <center>
+            <hr />
+          </center>
+        </div>
+        <div class="row">
+          <a href="{% url "register" %}" class="button button-primary u-full-width">Sign Up with CollegeCurry</a>
+          <button class="button-soc-goog u-full-width">Sign In with Google</button>
+          <button class="button-soc-fb u-full-width">Sign In with Facebook</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+{% endblock %}

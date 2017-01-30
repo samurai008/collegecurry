@@ -1,0 +1,73 @@
+{% load compile_static %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock title %} - CollegeCurry</title>
+    <meta charset="utf-8">
+    <title>Your page title here :)</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="{% static "/thewebapp/css/normalize.css" %}">
+    <link rel="stylesheet" href="{% static "/thewebapp/css/skeleton.css" %}">
+    <!-- <link rel="stylesheet" href="{% static "/thewebapp/css/hover-min.css" %}"> -->
+
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.7.0/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static "thewebapp/css/font-awesome/css/font-awesome.min.css" %}" />
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
+    <link rel="stylesheet" type="text/css" href="{% static "thewebapp/less/master.less"|compile %}" />
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row flex">
+        <div class="one column">
+          <h3><a href="{% url "index" %}">CC</a></h3>
+        </div>
+        <div class="eleven columns">
+          <!-- <a href="{% url "login" %}" class="button u-pull-right">Login / Register</a> -->
+          <input type="checkbox" id="op"></input>
+          <div class="lower">
+            <label for="op"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></label>
+          </div>
+          <div class="overlay overlay-hugeinc">
+          			<label for="op"></label>
+          			<nav>
+          				<ul>
+          					<li><a href="{% url "index" %}">Home</a></li>
+          					<li><a href="{% url "login" %}">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+          					<li><a href="{% url "register" %}">Register</a></li>
+          					<li><a href="#">About</a></li>
+          					<li><a href="#">Contact</a></li>
+          				</ul>
+          			</nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% block content %}
+
+    {% endblock content %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.7.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{% static "thewebapp/js/homepage.js" %}"></script>
+    <script src="{% static "thewebapp/js/animations.js" %}"></script>
+    {% block scripts %}
+    {% endblock %}
+  </body>
+</html>

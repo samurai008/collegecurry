@@ -1,0 +1,24 @@
+<!-- Search -->
+<div class="container" id="search-form">
+  <form action="{% url "search" %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+        <div class="six columns">
+          <input type="text" class="u-full-width" placeholder="Search for colleges and courses" />
+        </div>
+        <div class="six columns">
+          <select class="u-full-width">
+            <option>
+              All India
+            </option>
+          </select>
+        </div>
+        <button type="submit" class="button-primary center-block">Find College</button>
+    </div>
+  </form>
+</div>
+<div class="container">
+  <center>
+    <a href="#" class="button" id="toggle-search"><i class="fa fa-arrow-up"></i>&nbsp; Hide</a>
+  </center>
+</div>
