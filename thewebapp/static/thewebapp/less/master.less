@@ -318,6 +318,10 @@ a {
   margin: 0 auto;
 }
 
+table {
+  width: 100%;
+}
+
 // navigation
 .lower{
   background:white;
@@ -542,13 +546,8 @@ input[type="checkbox"]{
     margin: 0;
     float: left;
 
-    * {
-      display: block;
-      margin: 0 5px;
-    }
-
     a {
-      display: block;
+      display: inline;
       color: @light;
       padding: 1rem;
 
@@ -632,4 +631,33 @@ button[class^="button-soc"] {
   position: fixed !important;
   bottom: 0;
   width: 100%;
+}
+
+.score-background {
+  display: inline-block;
+  background: @float-background;
+  width: 35px;
+  background: #33C3F0;
+  font-weight: 600;
+  /* font-size: 14px; */
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 50%;
+  /* padding: 10px; */
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+}
+
+.review {
+  font-size: 11px;
+  color: @float-background;
+  font-weight: 600;
+  margin-left: 5px;
+  a {
+    color: lightblue;
+    &:hover {
+      color: darkblue;
+    }
+  }
 }

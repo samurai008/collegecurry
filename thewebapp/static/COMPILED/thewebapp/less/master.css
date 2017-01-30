@@ -147,6 +147,9 @@ a:hover {
   display: block;
   margin: 0 auto;
 }
+table {
+  width: 100%;
+}
 .lower {
   background: white;
   color: black;
@@ -351,12 +354,8 @@ input[type="checkbox"] {
   margin: 0;
   float: left;
 }
-.inline-list li * {
-  display: block;
-  margin: 0 5px;
-}
 .inline-list li a {
-  display: block;
+  display: inline;
   color: #fff;
   padding: 1rem;
 }
@@ -431,4 +430,30 @@ button[class^="button-soc"][class*="fb"]:hover {
   position: fixed !important;
   bottom: 0;
   width: 100%;
+}
+.score-background {
+  display: inline-block;
+  width: 35px;
+  background: #33C3F0;
+  font-weight: 600;
+  /* font-size: 14px; */
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 50%;
+  /* padding: 10px; */
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+}
+.review {
+  font-size: 11px;
+  color: #33C3F0;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.review a {
+  color: lightblue;
+}
+.review a:hover {
+  color: darkblue;
 }

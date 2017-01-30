@@ -29,22 +29,26 @@ College Detail
       <table>
         <tr>
           <td>
-            <h6 class="review-title">Title <br /><span>by Nilabjo rated <span class="score-board">A+</span></span></h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h6 class="review-title">Title <br /><span>by Nilabjo rated <span class="score-background">A+</span></span></h6>
+            <ul class="list">
+              <li>
+                Academics
+              </li>
+            </ul>
             <a href="#">Read More</a>
           </td>
         </tr>
         <tr>
           <td>
-            <h6 class="review-title">Title <br /><span>by Nilabjo rated <span class="score-board">A+</span></span></h6>
+            <h6 class="review-title">Title <br /><span>by Nilabjo rated <span class="score-background">A+</span></span></h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <a href="#">Read More</a>
           </td>
         </tr>
       </table>
-      <ul class="inline-list">
-        <a href="#" class="button button-primary">Prev</a>
-        <a href="#" class="button button-primary u-pull-right">Next</a>
+      <ul class="inline-list" style="justify-content:space-between;">
+        <li><a href="#" class="button button-primary">Prev</a></li>
+        <li><a href="#" class="button button-primary">Next</a></li>
     </div>
 
     <!-- Field Columns -->
@@ -52,8 +56,8 @@ College Detail
       <table class="except-border-last">
         <tr>
           <td>
-            <a href="#" data-featherlight="#mylightbox" id="mylightbox-btn">Academics</a>
-            <div id="mylightbox">abcd</div>
+            <a href="#" data-featherlight="#mylightbox" id="mylightbox-btn">Academics</a><span class="review">(<a href="#">Review</a>)</span>
+
 
             <!-- <a href="{% url "collegedetail" %}col-det-particular .selector" data-featherlight="ajax">Open ajax content in lightbox</a>
             <a href="{% url "collegedetail" %}col-det-particular" data-featherlight="iframe">Academics</a> -->
@@ -65,7 +69,7 @@ College Detail
 
         <tr>
           <td>
-            <a href="#">Sports</a>
+            <a href="#">Sports</a><span class="review">(<a href="#">Review</a>)</span>
           </td>
           <td>
             A+
@@ -74,7 +78,7 @@ College Detail
 
         <tr>
           <td>
-            <a href="#">Demographic</a>
+            <a href="#">Demographic</a><span class="review">(<a href="#">Review</a>)</span>
           </td>
           <td>
             A+
@@ -83,7 +87,7 @@ College Detail
 
         <tr>
           <td>
-            <a href="#">Placements</a>
+            <a href="#">Placements</a><span class="review">(<a href="#">Review</a>)</span>
           </td>
           <td>
             A+
